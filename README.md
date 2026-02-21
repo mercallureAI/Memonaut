@@ -1,43 +1,43 @@
-# Memonaut — 个人 AI 记忆与经验管理系统
+# Memonaut — Personal AI Memory & Experience Management System
 
-Memory + Astronaut，记忆航行者。基于 Obsidian vault + Claude Code SKILL 的个人 Agent 系统。
+Memory + Astronaut. A personal agent system built on Obsidian vault + Claude Code SKILL.
 
-## 特性
+## Features
 
-- 经验知识库（搜索/保存/索引）
-- 三层记忆体系（情景/语义/强制规则）
-- 任务管理（添加/完成/归档）
-- 每日简报 & 工作报告（日报/周报/月报）
-- 纯 Markdown，Obsidian 原生可读
+- Experience knowledge base (search / save / index)
+- Three-layer memory system (episodic / semantic / mandatory rules)
+- Task management (add / complete / archive)
+- Daily briefings & work reports (daily / weekly / monthly)
+- Pure Markdown, natively readable in Obsidian
 
-## 安装
+## Installation
 
 ```bash
 git clone https://github.com/xxx/memonaut.git
-node memonaut/scripts/memo-init.mjs [可选: vault路径]
+node memonaut/scripts/memo-init.mjs [optional: vault-path]
 ```
 
-默认 vault 路径：`~/memonaut-vault`，配置写入 `~/.memonaut.json`。
+Default vault path: `~/memonaut-vault`. Config is written to `~/.memonaut.json`.
 
-## 配置 Claude Code SKILL
+## Configure Claude Code SKILL
 
-将 `skills/` 目录添加到 Claude Code 的 SKILL 搜索路径。
+Add the `skills/` directory to Claude Code's SKILL search path.
 
-## 命令一览
+## Commands
 
-| 命令 | 说明 |
-|------|------|
-| `/memo-search <关键词>` | 搜索经验知识 |
-| `/memo-save` | 保存新经验 |
-| `/memo-index` | 重建经验索引 |
-| `/memo-remember` | 记录情景记忆 |
-| `/memo-distill [范围]` | 提炼语义记忆 |
-| `/memo-rules [add]` | 查看/添加强制规则 |
-| `/memo-archive` | 月记合并 |
-| `/memo-task [add/done]` | 任务管理 |
-| `/memo-task-archive` | 归档已完成任务 |
-| `/memo-briefing` | 今日简报 |
-| `/memo-report <类型>` | 生成工作报告 |
+| Command | Description |
+|---------|-------------|
+| `/memo-search <keyword>` | Search experience knowledge |
+| `/memo-save` | Save a new experience |
+| `/memo-index` | Rebuild experience index |
+| `/memo-remember` | Record an episodic memory |
+| `/memo-distill [range]` | Distill semantic memory |
+| `/memo-rules [add]` | View / add mandatory rules |
+| `/memo-archive` | Merge monthly memories |
+| `/memo-task [add/done]` | Task management |
+| `/memo-task-archive` | Archive completed tasks |
+| `/memo-briefing` | Daily briefing |
+| `/memo-report <type>` | Generate work report |
 
 ## License
 
